@@ -1,11 +1,13 @@
 import React from 'react';
-import Title from './Header/Title';
+import Title from './Title';
 
 export default class Header extends React.Component{
     render() {
+        console.error(this.props);
         return(
           <div>
-              <Title />
+              <Title title={this.props.name}/>
+              <input />
           </div>
         );
     }
